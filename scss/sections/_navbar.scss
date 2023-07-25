@@ -1,0 +1,22 @@
+.navbar{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: transparent;
+
+
+
+    &-collapse{
+        justify-content: end;
+    }
+
+    .navbar-toggler{
+        filter: invert(1);
+    }
+   
+}
+@media (max-width:988px) {
+    .navbar{
+        background-color: #222;
+    }
+}
