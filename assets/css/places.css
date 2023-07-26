@@ -116,9 +116,6 @@
   #section-sam {
     padding: 100px 20px;
   }
-  .my-container-sam .main-content-sam {
-    width: 100%;
-  }
   .my-container-sam .main-content-sam h1 {
     font-size: 2rem;
     line-height: 50px;
@@ -138,9 +135,6 @@
   }
 }
 @media screen and (max-width: 390px) {
-  .my-container-sam .main-content-sam {
-    width: 100%;
-  }
   .my-container-sam .main-content-sam h1 {
     font-size: 1rem;
     line-height: 35px;
