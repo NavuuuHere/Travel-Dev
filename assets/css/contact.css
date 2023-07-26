@@ -131,9 +131,11 @@
     margin-bottom: 40px; }
   .container .contactInfo,
   .contactForm {
-    width: 100%; }
+    width: 130%; }
   .contactForm {
     padding: 30px; } }
+  .container .contactInfo .box .icon{min-width: 40px;
+      height: 40px;}
 
 @media (max-width: 600px) {
   .contactForm {
