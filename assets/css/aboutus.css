@@ -1,0 +1,91 @@
+/* Global Styles */
+  .aabout{
+    color: black;
+    background-color: #ffffff;
+    font-weight: 700 !important;
+    overflow: hidden; /* Hide overflowing characters */
+    white-space: nowrap; /* Prevent line breaks */
+    animation: typewriter 4s steps(400) 1s forwards;
+    
+}
+
+@keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  /* About Section Styles */
+  .aabout-section {
+    font-family: Arial, sans-serif;
+    position: relative;
+    padding: 20px 0 100px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('/bacground-image.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+  }
+  .aabout-content p {
+    text-shadow: 0 0 0 rgba(255, 162, 1, 0); /* Initial shadow */
+    animation: textShadow 7s ease-in-out infinite;
+    color: #fff; /* Initial text color */
+    animation: colorChange 8s infinite alternate;
+  }
+  
+  @keyframes textShadow {
+    0% {
+      text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+    50% {
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  @keyframes colorChange {
+    from {
+      color: rgb(255, 210, 113);
+    }
+    to {
+      color: #b3e6ff; /* New text color */
+    }
+  }
+  
+  .acontainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-radius: 10%;
+  }
+  
+  .aabout-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .aabout-content h2 {
+    font-size: 36px;
+  }
+  
+  .aabout-content p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Animations */
+  @keyframes animateBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .aabout-section {
+    animation: animateBackground 20s linear infinite;
+  }
+  

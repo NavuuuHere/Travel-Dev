@@ -4,7 +4,9 @@
   padding: 0;
 }
 
-
+#section{
+  padding: 100px 200px;
+}
 .my-container {
   position: relative;
   display: flex;
@@ -111,7 +113,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  section {
+  #section {
     padding: 100px 20px;
   }
   .my-container .main-content {
