@@ -1,7 +1,6 @@
 /* Global Styles */
   .aabout{
-    color: black;
-    background-color: #ffffff;
+    color: #ffffff;
     font-weight: 700 !important;
     overflow: hidden; /* Hide overflowing characters */
     white-space: nowrap; /* Prevent line breaks */
@@ -22,16 +21,13 @@
     font-family: Arial, sans-serif;
     position: relative;
     padding: 20px 0 100px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('/bacground-image.jpg') center/cover;
-    color: #fff;
+    background-color: #3d7fb3;
     text-align: center;
   }
   .aabout-content p {
-    text-shadow: 0 0 0 rgba(255, 162, 1, 0); /* Initial shadow */
+    text-shadow: 0 0 0 rgba(1, 73, 255, 0); /* Initial shadow */
     animation: textShadow 7s ease-in-out infinite;
-    color: #fff; /* Initial text color */
-    animation: colorChange 8s infinite alternate;
+    color: #ffffff; /* Initial text color */
   }
   
   @keyframes textShadow {
@@ -43,14 +39,6 @@
     }
     100% {
       text-shadow: 0 0 0 rgba(255, 255, 255, 0);
-    }
-  }
-  @keyframes colorChange {
-    from {
-      color: rgb(255, 210, 113);
-    }
-    to {
-      color: #b3e6ff; /* New text color */
     }
   }
   
@@ -75,17 +63,4 @@
     line-height: 1.5;
   }
   
-  /* Animations */
-  @keyframes animateBackground {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 100% 100%;
-    }
-  }
-  
-  .aabout-section {
-    animation: animateBackground 20s linear infinite;
-  }
   
