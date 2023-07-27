@@ -1,30 +1,27 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-} */
+
 .loactions-part{
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: hsl(234, 90%, 70%, 0.2);
-  /* overflow: hidden; */
+  font-family: 'Poppins', sans-serif !important;
+
 }
 .slide-container{
   max-width: 1120px;
   width: 100%;
-  padding: 40px 0;
+  padding: 40px 0 !important;
 
 }
 .slide-content{
   margin: 0 40px;
   overflow: hidden;
   border-radius: 0px;
+
   /* background-color: red; */
   /* box-shadow: 0 0 10px 5px rgba(22, 43, 234, 0.2), 0 0 20px 10px rgba(8, 24, 164, 0.2); */
 }
@@ -35,7 +32,7 @@
   transition: transform .2s; /* Animation */
 }
 .card:hover{
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 .image-content,
 .card-content{
@@ -101,15 +98,17 @@
   box-shadow:  0 0 10px 5px rgba(65, 84, 241, 0.4), 0 0 20px 10px rgba(65, 84, 241, 0.3);
   color: lightgreen;
 }
-.btn{
+.btnL{
   /* box-shadow:  0 0 10px 5px rgba(65, 84, 241, 0.4), 0 0 20px 10px rgba(65, 84, 241, 0.3); */
   transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease-in-out;
+  /* margin-top: 20px; */
+  padding: 8px;
 }
-.btn:hover{
+.btnL:hover{
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-
-
+  transform: scale(1.1);
   cursor: pointer;
   color: lightgreen;
 
@@ -128,34 +127,34 @@
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after{
-  font-size: 25px;
+  font-size: 25px !important;
 }
 .swiper-button-next{
  
-  /* background-color: hsl(224, 30%, 27%);
+   background-color: hsl(224, 30%, 27%);
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 50px !important;
+  width: 50px !important;
   margin-left: 20px;
-   */
+  right: 10px;
+  left: auto;
    /* color: hsl(224, 30%, 27%); */
 }
 .swiper-button-prev{
 
-  /* background-color: hsl(224, 30%, 27%);
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  margin-right: 10px; */
-}
-.swiper-pagination-bullet{
-  /* margin-top: 10px; */
-  background-color: #fc0;
-  opacity: 1;
-  
-}
-.swiper-pagination-bullet-active{
   background-color: hsl(224, 30%, 27%);
+  border-radius:50%;
+  height: 50px !important;
+  width: 50px !important;
+  margin-right: 10px;
+  right: 10px;
+    left: auto;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: hsl(224, 30%, 27%) !important;
+  
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -163,14 +162,16 @@
     margin: 0 10px;
   }
   .swiper-navBtn{
-    display: none;
+    display: none !important;
   }
 }
+
 
 .blog-heading-element{
   background-color: hsl(224, 30%, 27%); 
   max-width: 250px; 
   margin: auto;
+  margin-top: 10px;
   width: 50%;
   border-radius: 25px; 
   margin-bottom: 20px; 
@@ -188,4 +189,7 @@
    margin-bottom: 0px;
    /* padding: 10px 8px; */
   
+}
+.locations-to-visit:hover{
+  color: lightgreen;
 }
