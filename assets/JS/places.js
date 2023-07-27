@@ -1,6 +1,6 @@
-const btns = document.querySelectorAll(".nav-btn");
+const btns = document.querySelectorAll(".nav-btn-sam");
 const slides = document.querySelectorAll(".video");
-const contents = document.querySelectorAll(".main-content");
+const contents = document.querySelectorAll(".main-content-sam");
 let currentSlideIndex = 0; 
 let autoplayIntervalId; 
 
