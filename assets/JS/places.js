@@ -1,6 +1,6 @@
 const btns = document.querySelectorAll(".nav-btn-sam");
 const slides = document.querySelectorAll(".video");
-const contents = document.querySelectorAll(".main-content-sam");
+const contents = document.querySelectorAll(".content-sam");
 let currentSlideIndex = 0; 
 let autoplayIntervalId; 
 
@@ -18,13 +18,12 @@ var sliderNav = function (manual) {
   btns[manual].classList.add("active");
   slides[manual].classList.add("active");
   contents[manual].classList.add("active");
-
   currentSlideIndex = manual; // Update the current slide index after navigation
   resetAutoplayInterval(); // Reset the autoplay interval after manual slide change
 };
 
 const totalSlides = slides.length;
-const autoplayInterval = 8000; // Set the time interval for autoplay (in milliseconds)
+const autoplayInterval = 10000; // Set the time interval for autoplay (in milliseconds)
 
 const autoplaySlides = () => {
   // Calculate the next slide index
