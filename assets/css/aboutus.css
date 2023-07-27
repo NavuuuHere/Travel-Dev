@@ -27,7 +27,7 @@
   .aabout-content p {
     text-shadow: 0 0 0 rgba(1, 73, 255, 0); /* Initial shadow */
     animation: textShadow 7s ease-in-out infinite;
-    color: #ffffff; /* Initial text color */
+    color: #e7e7e7; /* Initial text color */
   }
   
   @keyframes textShadow {
