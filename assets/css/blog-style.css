@@ -28,11 +28,16 @@
 .card{
   border-radius: 10px;
   background-color: #FFF;
-  /* box-shadow: 0 0 10px 5px rgba(22, 43, 234, 0.2), 0 0 20px 10px rgba(8, 24, 164, 0.2); */
   transition: transform .2s; /* Animation */
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 5px;
 }
 .card:hover{
   transform: translateY(-5px);
+  /* transform: scale(1.01); */
+  /* box-shadow: 0 12px 20px rgba(144, 238, 144, 0.5); */
+  box-shadow: 0 12px 20px rgba(22, 43, 234, 0.3);
+
 }
 .image-content,
 .card-content{
@@ -99,11 +104,10 @@
   color: lightgreen;
 }
 .btnL{
-  /* box-shadow:  0 0 10px 5px rgba(65, 84, 241, 0.4), 0 0 20px 10px rgba(65, 84, 241, 0.3); */
+
   transition: box-shadow 0.3s ease;
   transition: transform 0.3s ease-in-out;
-  /* margin-top: 20px; */
-  padding: 8px;
+  box-shadow: 0 12px 20px rgba(22, 43, 234, 0.3);
 }
 .btnL:hover{
   transform: translateY(-1px);
@@ -155,6 +159,7 @@
   background-color: hsl(224, 30%, 27%) !important;
   
   
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -187,9 +192,39 @@
    /* margin-bottom: 0px;  */
    font-size: large; 
    margin-bottom: 0px;
-   /* padding: 10px 8px; */
+   padding: 15px 8px;
+
   
 }
 .locations-to-visit:hover{
   color: lightgreen;
 }
+
+
+ /* CSS Animation for sliding in from bottom */
+ @keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the initial state for slide content (hidden) */
+.slide-content {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Apply the animation to the slide content */
+.slide-content.animate {
+  animation: slideInFromBottom 1s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
