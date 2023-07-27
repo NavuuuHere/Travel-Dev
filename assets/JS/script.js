@@ -3,6 +3,7 @@ var swiper = new Swiper(".slide-content", {
     spaceBetween: 20,
     loop: true,
     grabCursor: 'true',
+    speed: 800,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -25,3 +26,26 @@ var swiper = new Swiper(".slide-content", {
         },
     },
   });
+
+
+// Function to handle the intersection of slide content
+function handleSlideContentIntersect(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate"); // Apply the animation class
+    } else {
+      entry.target.classList.remove("animate"); // Remove the animation class if not intersecting
+    }
+  });
+}
+
+// Set up the Intersection Observer
+const slideContentObserver = new IntersectionObserver(handleSlideContentIntersect, {
+  threshold: 0.2, // Adjust the threshold as needed
+});
+
+// Get all slide content elements and observe them
+const slideContents = document.querySelectorAll(".slide-content");
+slideContents.forEach(content => {
+  slideContentObserver.observe(content);
+});
