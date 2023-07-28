@@ -19,20 +19,19 @@
   display: none;
   font-family: "Merriweather", sans-serif;
   padding: 30px;
-  margin: 10px;
+  margin: 20px;
 }
 .content-sam h1 {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 600;
-  margin-bottom: 10px;
-  line-height: 75px;
+  line-height: 70px;
   margin-bottom: 25px;
 }
 .content-sam p {
-  font-size: 19px;
+  font-size: 18px;
   margin-top: 10px;
   margin-bottom: 10px;
-  line-height: 35px;
+  line-height: 32px;
 }
 .content-sam.active {
   display: flex;
@@ -51,7 +50,7 @@
   box-shadow: 0 0 1rem hsl(224, 30%, 27%);
 }
 .content-sam span {
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: hsl(224, 30%, 27%);
 }
 
@@ -110,14 +109,16 @@
   .content-sam.active {
     display: flex;
     align-items: center;
+    min-height: 50vh;
+    max-height: 50vh;
   }
   .content-sam.active h1 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 35px;
   }
   .content-sam.active p {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 23px;
   }
   .content-sam.active a {
     font-size: 16px;
@@ -130,21 +131,42 @@
   }
 }
 @media (max-width: 280px) {
+  .content-sam.active {
+    min-height: 50vh;
+    max-height: 50vh;
+  }
   .content-sam.active h1 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 35px;
+    margin-bottom: 10px;
   }
   .content-sam.active p {
-    font-size: 17px;
+    font-size: 14px;
     line-height: 20px;
   }
   .content-sam.active a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
-@media (min-width: 648px) and (max-width: 1024px) {
+@media (min-width: 648px) and (max-width: 760px) {
+  .content-sam.active {
+    margin-left: 10px;
+  }
   .content-sam.active h1 {
-    font-size: 48px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .content-sam.active p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .content-sam.active a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 761px) and (max-width: 1024px) {
+  .content-sam.active h1 {
+    font-size: 42px;
     line-height: 50px;
   }
   .content-sam.active p {
