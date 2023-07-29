@@ -32,6 +32,7 @@
   transition: transform .2s; /* Animation */
   transition: box-shadow 0.3s ease;
   margin-bottom: 5px;
+  border-radius: 50px;
 }
 .card:hover{
   transform: translateY(-5px);
@@ -52,6 +53,7 @@
   row-gap: 5px;
   padding: 20px 0;
   background-color:hsl(39, 90%, 70% , 0.2);;
+  border-radius: 50px 50px 0px 0px;
 }
 
 .card-image{
@@ -60,12 +62,14 @@
   width: 250px;
   /* border-radius: 50%; */
   background: #FFF;
+  border-radius: 50px;
 
 }
 .card-image .card-img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 50px;
 }
 .location-name{
   font-size: 18px;
@@ -80,6 +84,9 @@
   font-size: 14px;
   color: #707070;
   text-align: center;
+}
+.description:hover{
+  color:indigo;
 }
 .read-more-button{
   /* font-family: "Nunito", sans-serif; */
