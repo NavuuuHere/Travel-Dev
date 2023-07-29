@@ -24,6 +24,7 @@
     color: #e7e7e7; /* Initial text color */
   }
   .acontainer {
+    height: 50vh;
     display: flex;
     align-items: center;
     max-width: 100%;
@@ -38,7 +39,7 @@
   }
   .aabout-content {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 0 0 30px;
   }
   
   .aabout-content h2 {
