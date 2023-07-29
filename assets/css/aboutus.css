@@ -56,8 +56,40 @@
     .aabout-content p {
       font-size: 12px;
     }
+    .acontainer{
+      flex-wrap: wrap;
+      text-align: center;
+      padding:2% 0 0 0%;
+    }
+    .aimg{
+      max-width: 75%;
+      margin-top: 0%;
+    }
+    .aabout-content{
+      margin-right: 30px;
+    }
   }
-
+  
+  @media (max-width: 280px) { 
+    .aabout-content h2 {
+      font-size: 12px;
+    }
+    .aabout-content p {
+      font-size: 8px;
+    }
+    .acontainer{
+      flex-wrap: wrap;
+      text-align: center;
+      padding:2% 0 0 0%;
+    }
+    .aimg{
+      max-width: 30%;
+      margin-top: 0%;
+    }
+    .aabout-content{
+      margin-right: 30px;
+    }
+  }
 
   
   
