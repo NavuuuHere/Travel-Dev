@@ -17,7 +17,7 @@
   text-align: center;
   height: 100%;
   display: none;
-  font-family: "Merriweather", sans-serif;
+  font-family: "poppins", sans-serif;
   padding: 30px;
   margin: 20px;
 }
@@ -42,20 +42,19 @@
   font-size: 20px;
   margin-top: 20px;
   padding: 7px 14px;
-  background: hsl(224, 30%, 27%);
+  background: hsl(224, 43%, 58%);
   border-radius: 12px;
 }
 .content-sam > a:hover {
   color: limegreen;
-  box-shadow: 0 0 1rem hsl(224, 30%, 27%);
+  box-shadow: 0 0 1rem hsl(224, 43%, 58%);
 }
 .content-sam span {
   font-size: 1.3em;
-  color: hsl(224, 30%, 27%);
+  color: hsl(224, 43%, 58%);
 }
-
 .box-2-sam {
-  background-color: hsl(224, 30%, 27%);
+  background-color: hsl(224, 43%, 58%);
   flex: 1;
   display: flex;
   justify-content: center;
@@ -69,6 +68,7 @@
 .video {
   position: absolute;
   clip-path: circle(0% at 0 50%);
+  padding: 20px;
 }
 .video.active {
   clip-path: circle(150% at 0 50%);
