@@ -1,54 +1,41 @@
 /* Global Styles */
   .aabout{
+    text-align: center;
     color: #ffffff;
+    background-color: hsl(224, 43%, 58%);
+    font-size: 2em;
     font-weight: 700 !important;
     overflow: hidden; /* Hide overflowing characters */
     white-space: nowrap; /* Prevent line breaks */
-    animation: typewriter 4s steps(400) 1s forwards;
+    margin-bottom: 0%;
+    padding: 2% 0 2% 0;
     
 }
-
-@keyframes typewriter {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
   /* About Section Styles */
   .aabout-section {
+    display: grid;
+    grid-row: auto;
     font-family: Arial, sans-serif;
     position: relative;
-    padding: 20px 0 100px 0;
-    background-color: hsl(224, 30%, 27%);
-    text-align: center;
+    padding: 0 0 60px 0;
+    background-color: hsl(224, 43%, 58%);
   }
   .aabout-content p {
-    text-shadow: 0 0 0 rgba(1, 73, 255, 0); /* Initial shadow */
-    animation: textShadow 7s ease-in-out infinite;
     color: #e7e7e7; /* Initial text color */
   }
-  
-  @keyframes textShadow {
-    0% {
-      text-shadow: 0 0 0 rgba(255, 255, 255, 0);
-    }
-    50% {
-      text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    }
-    100% {
-      text-shadow: 0 0 0 rgba(255, 255, 255, 0);
-    }
-  }
-  
   .acontainer {
-    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 0 30px 30px;
     border-radius: 10%;
   }
-  
+  .aimg{
+    height: auto;
+    max-width: 100%;
+    filter: hue-rotate(3.142rad);
+  }
   .aabout-content {
     max-width: 900px;
     margin: 0 auto;
@@ -60,16 +47,13 @@
   
   .aabout-content p {
     font-size: 18px;
-    line-height: 1.5;
   }
-
   @media (max-width: 650px) { 
     .aabout-content h2 {
       font-size: 24px;
     }
     .aabout-content p {
       font-size: 12px;
-      line-height: 1.5;
     }
   }
 
