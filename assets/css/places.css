@@ -46,7 +46,7 @@
   border-radius: 12px;
 }
 .content-sam > a:hover {
-  color: limegreen;
+  color: lightgreen;
   box-shadow: 0 0 1rem hsl(224, 43%, 58%);
 }
 .content-sam span {
