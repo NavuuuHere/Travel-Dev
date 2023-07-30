@@ -21,6 +21,12 @@ var swiper = new Swiper(".slide-content", {
         520: {
             slidesPerView: 2,
         },
+        540:{
+          slidesPerView:1,
+        },
+        550:{
+          slidesPerView: 2,    // you can delete 520 and 540
+        },
         950: {
             slidesPerView: 3,
         },
