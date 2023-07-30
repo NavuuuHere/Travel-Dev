@@ -129,6 +129,9 @@
   .box-2-sam {
     flex: 1;
   }
+  .video {
+    padding: 10px;
+  }
 }
 @media (max-width: 280px) {
   .content-sam.active {
