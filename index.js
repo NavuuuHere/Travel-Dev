@@ -22,7 +22,7 @@ window.addEventListener('load', typeWriter);
 
 const scrollButton = document.getElementById('landing-main-button');
 scrollButton.addEventListener('click', () => {
-  const targetElement = document.getElementById('targetSection'); 
+  const targetElement = document.getElementById('loactions-part'); 
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth' });
   }})
