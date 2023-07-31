@@ -1,55 +1,28 @@
-const mediaQueryLg = window.matchMedia('(min-width:988px)')
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
 
-if (mediaQueryLg.matches){
-    var opacity = 0
-document.addEventListener('scroll', ()=>{
-    let value = window.scrollY;
-    if (opacity<1){
-        if (value>50){
-            var increaseOpacity = setInterval(()=>{
-                document.querySelector('.navbar').style.backgroundColor = 'rgba(34,34,34,' + opacity + ')';
-                opacity += 0.1
-                console.log('increasing')
-                if (opacity>=1){
-                    console.log('stop increase')
-                    clearInterval(increaseOpacity);
-                    increaseOpacity = null
-                }
-            }, 100)
-        }
-        
-    }    
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('active');
 });
-document.addEventListener('scroll', ()=>{
-    let value = window.scrollY;
-    if (value===0){
-        increaseOpacity = null
-        opacity = 0
-        document.querySelector('.navbar').style.backgroundColor = 'rgba(34,34,34,' + 0 + ')'; 
-    }
-    
-    
-});
+
+
+const typewriterText = "DISCOVER THE COLOURFUL WORLD";
+
+let index = 0;
+function typeWriter() {
+  const textElement = document.getElementById('top-p-main');
+  if (index < typewriterText.length) {
+    textElement.innerHTML += typewriterText.charAt(index);
+    index++;
+    setTimeout(typeWriter, 70);
+  }
 }
 
-// CAROUSEL ANIMATION
+window.addEventListener('load', typeWriter);
 
-var i = 0
-
-
-$(".carousel-item1").turn({
-    width: '200%',
-    gradients: true,
-    acceleration:true
-  });
-
-var flipPage = setInterval(()=>{
-    if (i>=2){
-        i = 0
-        $(".carousel-item1").turn("previous").turn("previous");
-    }
-    else{
-        i++
-        $('.carousel-item1').turn('next')
-    }}, '2500')
-    
+const scrollButton = document.getElementById('landing-main-button');
+scrollButton.addEventListener('click', () => {
+  const targetElement = document.getElementById('targetSection'); 
+  if (targetElement) {
+    targetElement.scrollIntoView({ behavior: 'smooth' });
+  }})
