@@ -39,119 +39,50 @@
     />
   </head>
   <body>
-    <!----------------------------------------------------------
-    NAV BAR :- Suyyash
-    ----------------------------------------------------------->
 
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-lg">
-        <a class="navbar-brand text-white fw-bold" href="#">TrekAndTrails</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link text-white fw-bold"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white fw-bold"
-                aria-current="page"
-                href="#Aabout"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white fw-bold"
-                aria-current="page"
-                href="#"
-                >Services</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white fw-bold"
-                aria-current="page"
-                href="#"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white fw-bold"
-                aria-current="page"
-                href="#"
-                >FAQ</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white fw-bold"
-                aria-current="page"
-                href="#"
-                >Contact</a
-              >
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link text-white dropdown-toggle fw-bold"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Pages
-              </a>
-              <ul class="dropdown-menu bg-dark">
-                <li>
-                  <a class="dropdown-item text-white" href="#">Page -1</a>
-                </li>
-                <li><a class="dropdown-item text-white" href="#">Page-2</a></li>
-              </ul>
-            </li>
-          </ul>
+    <!--Navbar By Navuuu-->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="./Travel Logo.png" alt="logo">
+        </div>
+        <div class="menu" id="menu">
+          <a href="#main">Home</a>
+          <a href="#Aabout">About Us</a>
+          <a href="#loactions-part">Locations</a>
+          <a href="#">Pricing</a>
+          <a href="#container-sam">Blogs</a>
+          <a href="#contact-c">Contact Us</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
       </div>
     </nav>
 
-    <!--------------------------------------------------------------------
-      Carousel :- Suyyash
-    --------------------------------------------------------------------->
-    <section class="landing carousel1" id="home" style="height: 100vh">
-      <div class="carousel-item1">
-        <div class="carousel-item1--1"></div>
-        <div class="carousel-item1--2"></div>
-        <div class="carousel-item1--3"></div>
-        <div class="carousel-item1--3"></div>
-        <div class="carousel-item1--2"></div>
-      </div>
-      <div class="carousel-text">
-        <div class="carousel-text--header fw-bold text-white">
-          DISCOVER THE COLOURFUL WORLD
+<!--Landing Pgae by Navuuu-->
+    <section id="landing-page">
+      <div class="blurred-bg">
+        <div id="main">
+          <div class="main-content">
+            <div class="main-text">
+              <p id="top-p-main"></p>
+              <h1>Your Journey <span>Starts Here</span>!</h1>
+              <p id="landing-p-secondary">
+                Our mission is to inspire and facilitate your wanderlust,
+                guiding you towards extraordinary destinations and hidden gems
+                that will leave you in awe. Whether you're a seasoned traveler
+                seeking off-the-beaten-path escapades or a first-time explorer
+                eager to embark on a new adventure, we have something special
+                for every kind of wanderer.
+              </p>
+              <button id="landing-main-button">
+                Explore &#10132;
+              </button>
+            </div>
         </div>
-        <div class="display-4 fw-bold text-white">NEW ADVENTURE</div>
-        <div class="carousel-text--subtext text-white">
-          Escape to a world of wanderlust and adventure. Uncover hidden gems,
-          immerse in diverse cultures, and let your inner explorer roam free.
-          Your journey starts here.
-        </div>
-        <button class="rounded-pill pill-btn fw-bold">DISCOVER NOW</button>
       </div>
     </section>
 
@@ -305,7 +236,7 @@
 
 
     <!-- Blogs :- Praveen-->
-    <section class="loactions-part">
+    <section id="loactions-part" class="loactions-part">
       <div class="slide-container swiper">
         <!-- swiper : This class is crucial because Swiper.js looks for elements with this class to initialize the Swiper and apply the slider functionality to it. -->
 
@@ -544,7 +475,7 @@
     </section>
     <!-- Location Nearby :- Sam-->
     <!-- Places To Visit Near US Section:- SAM-->
-    <section class="container-sam">
+    <section id="container-sam" class="container-sam">
       <div class="box-1-sam">
         <div class="content-sam active">
           <h1>Beaches Of <br /><span>Wonder</span></h1>
