@@ -26,7 +26,40 @@
   color: white;
 }
 
+.media-icons{
+  z-index: 999;
+  position: absolute;
+  display: flex;
+  /* flex-direction: column; */
+  bottom: 50px; /* Place the icons 20px from the bottom */
+  left: 50%; /* Move the icons to the center horizontally */
+  transform: translateX(-50%); /* Center the icons horizontally */
+  backdrop-filter: blur(10px); /* Apply blur to the container's background */
+  border-radius: 10px; /* Add rounded corners for a better visual effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+  padding: 0 20px 0 20px;
+}
+.media-icons a{
+  font-size: 2.5em; /* Increase the font size to 2.5em */
+  color: white;
+  margin: 0 5px;
+  gap: 10;
+}
+.media-icons a:not(:last-child) {
+  margin-right: 30px; /* Adjust the gap as needed */
+}
+.media-icons a:hover {
+  color: lightgreen; /* Change to the desired hover color */
+  animation: shake 0.5s ease-in-out; 
 
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
 .menu a::after{
   content: '';
   height: 4px;
@@ -34,7 +67,7 @@
   background-color:lightgreen;
   display: block;
   transition: all .3s;
- 
+  
 }
 .menu a:hover::after{
   width: 100%;
@@ -137,6 +170,7 @@
 
 #landing-p-secondary{
   font-size: 0.9rem;
+  line-height: 1.9;
 }
 #top-p-main {
   animation: typing 4s steps(40), blink-caret 0.75s step-end;
@@ -233,3 +267,16 @@ box-shadow: 0 0 0.69rem black;
     margin-top: 3rem;
   }
 }
+
+@media screen and (max-width:390px) {
+  .media-icons a {
+   font-size: 1.5rem;
+}}
+
+@media screen  and (max-width:1100px){
+ 
+#landing-p-secondary {
+  /* font-size: 0.9rem; */
+  margin: 0 10px 0 0px;
+  line-height: 1.5;
+}}
