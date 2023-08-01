@@ -236,3 +236,14 @@ body {
     font-size: smaller;
   }
 }
+@media screen and (max-width: 420px){
+  .container-pr h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  .container-pr h1:hover{
+    font-size: 1.5rem;
+    color: black;
+    
+  }
+}
