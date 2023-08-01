@@ -235,4 +235,16 @@
 }
 
 
+@media screen and (max-width: 420px){
+  .locations-to-visit{
+    font-size: 1rem;
 
+  }
+
+}
+@media screen and (max-width: 300px){
+  .locations-to-visit{
+    font-size: 0.7rem;
+    
+
+}}
