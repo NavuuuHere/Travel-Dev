@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 50px;
 
-  background-color: hsl(234, 90%, 70%, 0.2);
+  background-color: hsl(234, 90%, 60%, 0.2);
   color: white;
   position: relative;
 }
@@ -47,17 +47,20 @@ body {
 }
 
 .card-pr {
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 1px solid rgb(255, 255, 255); */
   display: flex;
   flex-direction: column;
   border-radius: 15px 15px;
-  box-shadow: 6px 6px 6px black;
+  /* box-shadow:  0 0 10px 5px rgba(65, 84, 241, 0.4), 0 0 20px 10px rgba(65, 84, 241, 0.3); */
+ 
+ box-shadow: 0 0 10px 5px rgba(65, 84, 241, 0.1), 0 0 20px 10px rgba(65, 84, 241, 0.1);
   background-color: hsl(223, 60%, 17%);
   transition: all 0.3s linear 0.1s;
 }
 
 .card-pr:hover {
   transform: scale(1.02);
+  box-shadow:  0 0 10px 5px rgba(65, 84, 241, 0.4), 0 0 20px 10px rgba(65, 84, 241, 0.3);
   /* box-shadow: 4px 6px; */
 }
 
@@ -91,6 +94,7 @@ body {
 .b-pr button {
   width: 150px;
   border-radius: 8px;
+  
 }
 
 .b-pr button:hover {

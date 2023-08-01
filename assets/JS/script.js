@@ -1,38 +1,36 @@
 var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
-    grabCursor: 'true',
-    speed: 800,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,
+  speed: 800,
+  autoplay: {
+    delay: 1500, // Adjust the delay value as needed (in milliseconds)
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    520: {
+      slidesPerView: 2,
     },
-
-    breakpoints:{
-        0: {
-            slidesPerView: 1,
-        },
-        520: {
-            slidesPerView: 2,
-        },
-        540:{
-          slidesPerView:1,
-        },
-        550:{
-          slidesPerView: 2,    // you can delete 520 and 540
-        },
-        950: {
-            slidesPerView: 3,
-        },
+    550: {
+      slidesPerView: 2,
     },
-  });
-
+    950: {
+      slidesPerView: 3,
+    },
+  },
+});
 
 // Function to handle the intersection of slide content
 function handleSlideContentIntersect(entries, observer) {
