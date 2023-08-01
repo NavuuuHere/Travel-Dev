@@ -1,8 +1,10 @@
 /* Global Styles */
+.about_div{
+  background: linear-gradient(to top, rgb(0, 11, 52), #177493); /* Navy blue gradient */
+}
   .aabout{
     text-align: center;
     color: #ffffff;
-    background-color: hsl(224, 43%, 58%);
     font-size: 2em;
     font-weight: 700 !important;
     overflow: hidden; /* Hide overflowing characters */
@@ -18,7 +20,6 @@
     font-family: Arial, sans-serif;
     position: relative;
     padding: 0 0 60px 0;
-    background-color: hsl(224, 43%, 58%);
   }
   .aabout-content p {
     color: #e7e7e7; /* Initial text color */
@@ -90,6 +91,132 @@
       margin-right: 30px;
     }
   }
+  /* Footer styles */
+.afooter {
+  background: linear-gradient(to top, rgb(0, 0, 0), #2a3a5c); /* Navy blue gradient */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.afooter-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.afooter-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0px 10px 20%;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.afooter-links li {
+  margin-right: 20px;
+}
+
+.afooter-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.afooter-links a:hover {
+  text-decoration: underline;
+}
+
+.asocial-icons {
+  list-style: none;
+  padding: 0;
+  margin: 10px 20% 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.asocial-icons li {
+  margin-right: 10px;
+}
+
+.asocial-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Subscribe section */
+.asubscribe {
+  margin-top: 20px;
+  
+}
+
+.pyaraa{
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+.pyara{
+  margin-top: 1rem;
+}
+
+.asubscribe input[type="email"] {
+  width: 200px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.asubscribe input[type="submit"] {
+  background: #2a3a5c;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 4%;
+  margin-left: 6%;
+}
+
+.asubscribe input[type="submit"]:hover {
+  background: #405f9e;
+}
+
+/* Responsive footer styles */
+@media screen and (max-width: 768px) {
+  .afooter{
+    flex-direction: row;
+  }
+  .afooter-sections {
+      flex-direction: row;
+  }
+  .asocial-icons{
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0 10px 38%;
+  }
+
+  .afooter-links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .pyara{
+    font-size: 12px;
+  }
+  .pyaraa{
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .asubscribe input[type="email"] {
+      width: 100%;
+      margin-left: 7%;
+      margin-top: 4%;
+  }
+}
+
 
   
   
