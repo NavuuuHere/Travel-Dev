@@ -26,3 +26,21 @@ scrollButton.addEventListener('click', () => {
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth' });
   }})
+
+
+  // navbar scrolling background color effect
+   // JavaScript to add and remove the "scrolled" class on scroll
+   $(document).ready(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 0) {
+        $(".navbar").addClass("scrolled");
+        $(".navbar-text").addClass("white-text");
+      } else {
+        $(".navbar").removeClass("scrolled");
+        $(".navbar-text").removeClass("white-text");
+      }
+    });
+  });
+
+
+
