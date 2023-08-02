@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +23,10 @@ body {
   font-size: medium;
 }
 
+#h1-of-pricing-main{
+  font-family: 'Poppins', sans-serif !important;
+} 
+
 .container-pr h1 {
   margin: 0;
   text-align: center;
@@ -41,8 +48,8 @@ body {
 }
 
 .indian-dest-pr .image-pr img {
-  height: 157.5px;
-  width: 280px;
+  height: 170px;
+  width: 300px;
   border-radius: 15px 15px 0px 0px;
 }
 
